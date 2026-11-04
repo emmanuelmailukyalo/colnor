@@ -1,0 +1,163 @@
+SUMISSURA WEBSITE INVESTIGATION NOTES
+Observed: 12 October 2026 (Africa/Nairobi)
+Scope: Public website behavior and visual observations. No site construction in this investigation.
+
+IMPORTANT INTERPRETATION
+This report records observations from the accessible public site. It does not claim to have inspected every page, every product, every image, every responsive breakpoint, or every hover state. The site contains thousands of dynamic products and the full designer has many configurable options. Exact image-by-image inventory and every button state require a longer controlled pass. Values marked “observed” came from the browser or computed styles; visual estimates are labeled accordingly. No account, personal data, purchase, or payment interaction was submitted.
+
+PAGES VISITED
+- Home: https://www.sumissura.com/en/
+- Women's suits collection: https://www.sumissura.com/en/women/women-suits/
+- Example product: https://www.sumissura.com/en/women/suits/909236-navy-blue-wool-blend-woman-suit-with-peak-lapels
+- Product customizer reached from that product's Customize button.
+- The customizer's Next button was used through the Accents stage; its next transition led to My Shopping Bag. No order/payment was placed.
+
+1. GLOBAL BRAND AND VISUAL SYSTEM
+- Brand wordmark is lowercase “sumissura” in a geometric sans-serif treatment. Desktop homepage logo is centered over the hero; the product detail page has a compact centered logo in a white header.
+- Main body font observed via computed styles: “Fira Sans”, Tahoma, sans-serif. Some headline/title nodes also compute to “Fira Sans”.
+- Primary body color observed: rgb(33, 39, 39) (#212727). White page background: rgb(255, 255, 255). Warm neutral section observed: rgb(245, 244, 239) (#f5f4ef). Light gray image-card background observed: rgb(239, 239, 239). Bright pink CTA observed: rgb(232, 69, 139) (#e8458b). Other sampled dark color: rgb(33, 33, 33) (#212121). Color sampling came from live computed styles, not a complete design token export.
+- Buttons on product detail: pill-shaped, 40px computed radius; Customize and Add to Cart buttons were 50px tall, 168px wide in a 888x560 viewport. Main collection Design Your Suit button visually uses a pink pill and white lettering.
+- Many collection/content images and cards have square corners (0px radius on the inspected product-image container); buttons/icons may have circular treatments.
+- Main style is high-contrast white/charcoal with warm off-white content bands and a saturated pink action color. Editorial photography fills broad areas; headers overlay imagery on landing heroes.
+
+2. GLOBAL NAVIGATION (HOME PAGE)
+- A narrow charcoal announcement strip is at the top, centered text: “100% made to measure”.
+- On desktop homepage, the navigation overlays the hero image rather than occupying a separate white row. Left side: hamburger, “Custom clothing”, “Custom Footwear”, “Man ↗”. Center: Sumissura wordmark. Right: chat icon, globe + “Global”, account/login icon + “Login”, cart icon.
+- Header text/icon colors on the home hero are white. The hamburger opens a left-side white drawer; the page behind dims. The drawer is about 315px wide in a 1280px viewport, vertically scrollable, with close X at upper left and a thin vertical scrollbar/divider.
+- Drawer top-level labels observed: Highlights, Clothing, Occasion, Footwear, Custom, Accessories, Man ↗, About. Lower utility links: Digital body profile (gold-highlighted first word), Order samples, Blog, Giftcard.
+- Clicking “Clothing” keeps the left drawer and opens a second pale warm-gray panel to its right. It is titled “Shop by product” and lists Suits, Shirts & Tops, Blazers, Waistcoats (new), Pants, Jeans, Skirts, Dresses, Outerwear. A right-hand image-tile panel appears, headed “Design your own”; on the Suits selection it showed Women Suits, Women Pantsuits, Skirt suits, Tuxedos, Linen Suits, Tweed Suits, Pinstripe Suits, White Suits, etc.
+- Clicking “Occasion” opens “Shop by occasion” with Party, Wedding, Work, Weekend, and a featured Wedding Collection 2026 tile/link.
+- Navigation panel selection is hover/click stateful; unselected menu groups fade to muted gray while the chosen group remains dark.
+- “Global” opens a language/country selector (not changed). Login, cart, chat, and region controls were not submitted or authenticated.
+
+3. HOME PAGE STRUCTURE AND HERO
+- Current home headline: “Dress the real you” with subheading “Your style, your fit, your way”. Large full-width editorial hero photo of a woman outdoors in a camel coat and dark scarf; the navigation overlays the top of it. Main headline sits lower-left in large white sans-serif text. Hero fills most of the first viewport below the announcement bar.
+- Following sections observed in accessible page structure: “Bespoke from head to toe” product-category tiles (Pant Suits, Shirts, Coats, Blazers, Tuxedos, Trenchcoats, Jeans, Dresses, Shoes, Skirt Suits, Evening Dresses, Blouses); “Tech for a perfect fit”; “Outfit Ideas” community looks; “Our planet”; customization/fit information; “Featured in”; “Reviewed by you” Trustpilot + testimonial carousel; newsletter and grouped footer.
+- Home hero/category imagery should be inventoried from actual loaded assets during a dedicated image pass; this note describes the main hero only.
+
+4. WOMEN'S SUITS COLLECTION PAGE: TOP + HERO
+- URL: https://www.sumissura.com/en/women/women-suits/
+- Announcement strip repeats “100% made to measure Custom-tailored clothing Perfect Fit, Guaranteed”. On collection page, the header is overlaid over the hero image. Left: hamburger and global clothing/footwear/man navigation; center: logo; right: region, login, cart.
+- Hero on the observed desktop 1280x720 viewport occupies nearly all space below a 50px announcement strip; computed hero images are 2500x1500 source files displayed at 1265x759. There is a large full-bleed lifestyle photo; observed image shows a woman in a navy trouser suit and light blue shirt in a bright coastal/window setting, positioned on the right half. Text block on left.
+- Text: “Women's Suits”; “from 249€”; five stars and “3.495 Reviews”; H2 “Tailored Women's Suits”; description begins “Suits that fit your body, your style, and your story. Each Sumissura suit is cut to your exact measurements, not a standard size, so it fits you perfectly from the first try.” Pink “Design Your Suit” pill.
+- Bottom-left hero delivery promise: “Order today, receive it by November 2. Free shipping” (delivery date is dynamic and should not be copied as a fixed value).
+- Observed H1 computed Fira Sans, 52px, weight 400; its bounding box at desktop was 500x47px at x64/y235.
+- Rating link leads to the same collection URL with reviews anchor/behavior. Primary Design Your Suit link leads to /en/women/women-suits/personalize.
+
+5. COLLECTION PAGE ORDER AND CONTENT
+1. Full-width suit hero described above.
+2. “Start with a base style” horizontal image carousel. Visible cards show full-length models wearing a white tuxedo jacket with black top and trousers; a brown checked/tweed skirt suit; a white wedding pantsuit; a dark pinstripe suit; more cards partly offscreen. Cards use large portrait crops and labels below. Circular/gray next arrow appears at right edge. Links: Women's Tuxedos, Women's Tweed Suits, Wedding Suits for Women 2026, Pinstripe Suits for Women, Plaid Suits for Women, Plus Size Suits, Petite Suits, Power Suits. “Help me choose” link appears near the carousel.
+3. “Here's how it works” section. Three horizontally aligned text columns: “SELECT YOUR SUIT FABRIC” (wool/linen, styles/seasons/occasions); “DESIGN YOUR SUIT” (trouser/skirt suit, buttons, lapel, fit); “MEASURE YOURSELF” (self-measurement or friend help).
+4. “Design Your Suit Online” promotional section describing its “unique 3D configurator”; desktop is image/product configurator demonstration next to text. The embedded video/media showed “Unable to play media” in the accessibility tree during this session.
+5. “Inspiration from Real Women” introduction and a horizontal row/carousel of outfit looks; visible examples include brown double-breasted blazer + terracotta blouse + wide-leg jeans; houndstooth blazer + black shirt + black jeans; Donegal blazer + white shirt + ecru jeans; navy wedding suit; black tie tuxedo; white striped linen suit; mother-of-groom, wedding guest looks. Each card has “SHOP LOOK”. “See the looks” link.
+6. “Your Suit, Your Story” large editorial image-and-copy split section; text describes fabric, fit, buttons, lining, finishing. CTA “START DESIGNING”.
+7. Editorial/product information content including image set (product white-background views, construction/fabric detail, white/gray suit photos), plus “Suits for Women” product collection.
+8. Suit product catalog: desktop product cards arranged in approximately five columns at the inspected width; product imagery is portrait full-body clothing photography. Each card has product title, material/attributes, color/pattern metadata and euro price. Example first row included Navy Blue wool blend Woman Suit with peak lapels (269€), Forest Green Pant Suit (299€), navy double-breasted pinstripe wide-leg suit (364€), blue linen skirt suit (319€), and a “DESIGN YOUR SUIT FROM SCRATCH” promo card, followed by more catalog products. The accessible tree listed over 25 products on the collection page before further products/content. A “See more products” CTA appears in the catalog region.
+9. “Own the Room, One Stitch at a Time” editorial content and “Tailored for the Boss You Are” benefit strip; benefit headings: PERFECT FIT GUARANTEE, CUSTOMIZABLE, GET MEASURED.
+10. “Reviewed by you” Trustpilot widget and testimonial carousel (quotes/authors/ratings). Reviews include “Every woman dreams to find the perfect garment”, “I am obsessed with everything”, and “Perfect”. “See them all” link.
+11. “Learn more in our blog” three article cards, examples “15 Best Women's Suits for 2026”, “The Power Suit: Elevate Your Style and Confidence”, “The Guide to Perfect Business Formal Attire”.
+12. “Tailored Suits just for you” long-form company overview plus a long FAQ accordion. Observed FAQ topics: customization; 3D preview; design help; measuring; fit guarantee; body shape/size inclusivity; fabric types and selection; where made; delivery timing; express shipping; shipping destinations; changing measurements; event/wedding suits; styling; sustainability; choosing Sumissura; where to buy; choosing the right suit; business/casual/elegant suits.
+13. Footer: newsletter form + privacy agreement; Women product links; Men's Store links; Company links; Support links; payment-method logos (Visa, Mastercard, PayPal, Maestro, Apple Pay, American Express); shipping partners DHL/FedEx; awards/social links; copyright and Terms/Privacy.
+- A fixed white bottom bar persists while scrolling, with Sumissura logo at left, “Woman Suit from 249€” on right-center, pink “Design Your Suit” button at right. It overlays lower content with a shallow shadow. Pink chat bubble remains floating near lower-right.
+
+6. PRODUCT DETAIL PAGE
+- Example item: “Navy Blue wool blend Woman Suit with peak lapels”, 269€, VAT included, shown in the product gallery as a full-length navy fitted trouser suit with white shirt and black pointed shoes against a light studio background.
+- Desktop 888x560 screenshot: white header, centered wordmark, hamburger left, Global/Login/Cart right. Main body is two columns: large product gallery on the left (~48% width) and detail/info panel on right (~43%), with generous margins and square light-gray image background.
+- Gallery uses large portrait images/video with circular previous/next arrows at left/right centers. Page images include model front/back views, folded blazer/pants, fabric closeups and lifestyle look; exact full sequence should be recorded in a separate per-product image pass.
+- Detail panel: breadcrumb “Women / suits / pant suits / blue”; product title; right-aligned price; review stars and “4.1/5 (3836 Reviews)”; share icon and heart/wishlist; “Free Shipping”; Color label and circular navy/black color swatches; Fabric “Twill · Navy Blue · 100s”; Size Range “Made to measure. (How it works)”; pill buttons Customize (pink) and Add to Cart (dark charcoal).
+- Product page computed style: Fira Sans; title 20px; body labels 14px. Customize and Add to Cart 168x50px, border-radius 40px. Primary pink #e8458b, dark button #212727. No corner radius on main image container.
+- Clicking Customize navigates to the configurator for the same product (`/personalize?action=feed&step=config`) and selected navy 269€ model. Product gallery arrows, swatches, wishlist/share, and Add to Cart were not fully exercised in this session.
+- Add to Cart on a public sample was not clicked in this pass to avoid creating a cart/order state. No transaction attempted.
+
+7. SUIT DESIGNER / CONFIGURATOR
+- Entered through Customize. Initial loading state is a white canvas with gray spinner centered, minimal menu icon top center, fabric/style/accents selector and bottom fixed order summary/Next bar. After load, viewport splits into a left option panel (~270px of 903px screenshot) and right garment preview; model shown against warm light-gray background.
+- Top has hamburger/menu on the left panel, and chat/share/wishlist icons top-right of preview. Bottom of preview area has icon tabs FABRIC, STYLE, ACCENTS. Bottom sticky bar shows “Tailored Suit”, current euro price, VAT/delivery promise and bright-pink Next button.
+- In the observed preselected navy product state: price 269€, delivery phrase “Order today, receive in 3 weeks. Free shipping.”
+- FABRIC stage: large library, shown with filter panel and image swatches. Filter categories observed: Highlights (New, Best-Seller, Premium, Branded Fabrics, Stretch, Tweed, Seasonal Color); Occasion (Business, Casual, Celebration, Smart casual); Color; Season (Year round, Winter, Summer); Pattern; Features (Quick dry, Breathable, Anti-pilling, Soft touch, Anti-shrinkage, Anti Stain, Easy iron, Wrinkle free, Water resistant, Drape, Signature, Soft Drape, Brushed, Nanotex, Double Brushed, Cool touch); Material (Wool, Linen, Cotton, Pure wool, Merino wool, Wool Blends, Cotton Blend, Cotton-Linen, Cotton-tencel, Linen-cotton, Linen Blends, Polyester, Technical, Linen-Tencel and more); Fabric type (Tweed, Flannel, Velvet, Corduroy, Sharkskin, Nailhead, Seersucker, Jacquard, Hopsack, Chambray, Plain weave, Crepe, Serge, Donegal, Dobby, End on end, Herringbone, Houndstooth, Twill); Price bands under 250€, 250–425€, 425–600€, above 600€. More filter facets include color, pattern, brightness, and material composition.
+- Fabric options include photographic/textured swatches, designer/color names and prices; filters are collapsible/expandable, with “Other (n)” / “fewer options” controls; a hide-filter icon and clear/trash control are present. Search field is visible in initial fabric state.
+- STYLE stage screenshot showed clickable illustrated option tiles in a left-side scrollable list: jacket style (Remarkable, Essential, Heritage), Buttons, Vents, Jacket Bottom; more below fold: trouser style (Essential, Pencil, Flared), Fastening (Zipper), Rise (High, Medium), Length (Ankle, Long), Waistcoat (Without/With). Selecting configuration changes active check indicator and updates 3D garment preview (actual reference uses layered garment assets; images were fetched from its /3d/new_woman/ path).
+- ACCENTS stage screenshot showed Shiny Lapels (By default / Custom colour +10€), Internal Lining (By default / Custom colour +10€), Monogram (+8€) with initials input. More detail controls extend below fold.
+- Next stages can progress to measurements and save/order. Clicking through Next from Accents led to My Shopping Bag in this session (potentially because the initial selection was persisted from earlier testing); no payment was initiated. A complete measured checkout flow remains uninspected.
+
+8. RESPONSIVE BEHAVIOR / HOVER / MICRO-INTERACTIONS
+- Desktop navigation overlays homepage and collection hero. The collection page becomes a different compact white header on the product detail/configurator pages.
+- Collection base-style carousel has arrow controls and horizontal card progression. Product grid becomes dense multi-column catalog; sticky CTA remains fixed at bottom.
+- Product-detail gallery arrows imply gallery slide navigation; color swatches select color variants; wishlist heart, share action, Customize and Add to Cart controls are visible. Only Customize was exercised.
+- Product cards appear clickable and contain titles/details/prices; exact hover state was not completely captured. This pass confirmed broad image/product catalog layout, not every card hover micro-state.
+- Mobile viewport was not available through this browser instance during this pass; responsive breakpoints/menu behavior must be inspected separately on actual mobile width and tested menu by menu.
+- Chat bubble appears fixed at the lower-right; opening chat reveals “Anything I can help you with?” prompt on home page. It was not used to send any content.
+
+9. IMAGE-BY-IMAGE INVENTORY STATUS
+- Captured visual descriptions: homepage hero (woman in camel coat/scarf outdoors); collection hero (woman in navy pant suit in bright coastal/glass setting); base-style cards (white tuxedo, checked/tweed skirt suit, white wedding pantsuit, pinstripe suit); example PDP (navy suit front model; further gallery images include rear/model views, folded jacket/pants, closeups, lifestyle look); designer garment preview (navy suit model, layered garment rendering); catalog includes many color/pattern silhouettes, with product names/colors captured in section 5.
+- Exact exhaustive per-image record was not completed. To fulfill that literally, systematically enumerate `img` nodes and source URLs from all target URLs, then inspect each product gallery/image and hover states page by page. The catalog is dynamic and extensive; label each record with URL, image index/alt/source, visible subjects, garment/color/pose/background, dimensions, and interaction/hover result.
+
+10. EXACT VALUES / MEASUREMENTS CAPTURED
+- Live home body font: Fira Sans, Tahoma, sans-serif.
+- Primary text: #212727; primary CTA: #e8458b; background white #ffffff; warm off-white #f5f4ef; pale image background #efefef.
+- Product page header logo element observed 115x30px at 888px browser width; burger link 63x45px; cart icon 22x22px; title 20px; CTA buttons 168x50px, 40px radius.
+- Desktop collection hero source image 2500x1500, rendered approximately 1265x759 at 1280x720 browser viewport; hero H1 52px Fira Sans regular.
+- Main menu drawer width approximately 315px at 1280px viewport (visually measured from screenshot); two-level panel can expand across substantial width.
+- These are snapshots for the browser viewport and responsive site state on the observation date; not universal tokens for every breakpoint/page.
+
+11. REMAINING INVESTIGATION PLAN (NO BUILDING)
+- Start at each header control: hamburger groups Highlights/Clothing/Occasion/Footwear/Custom/Accessories/About; global/region; account; cart; chat; record opened panels, exact options, transitions, and close behavior.
+- Home: image-by-image and section-by-section record with screenshot/computed boxes; hover all category cards and look carousel items; test links and carousel arrows.
+- Suit collection: record every base-style card image and hover; all hero buttons; how-it-works links; configurator promo; look carousel controls; every product card loaded/pagination state; benefit/review/blog/FAQ/footer controls; responsive menu at multiple widths.
+- Product details: for every representative item, enumerate gallery images, arrows/zoom/video, colors, fabric/size links, share/wishlist, customize/add-to-cart behavior. Do not finalize purchase.
+- Designer: document all fabric filters and actual selections; garment style/buttons/vents/hem/lapel/trouser/skirt/waistcoat options; accents/monogram; measurements and size help; sticky Next progression; saved design/cart effects. Do not submit payment.
+- Catalog likely requires one representative product per category/color/pattern and then an exhaustive asset inventory generated from loaded image src URLs. Treat “every product and every image” as an ongoing ledger rather than claiming completeness prematurely.
+- CSS exactness: extract computed styles for representative components at desktop/tablet/mobile widths; record box dimensions, spacing, font-family/size/weight/line-height/letter spacing, border/background/shadow/radius, image crop/object-position, hover/focus/selected/disabled states.
+
+WORKSPACE NOTE
+The earlier Atelier Nairobi prototype folder was targeted for deletion at the user's request. Windows reported the folder remained in use even after stopping the local preview server, so deletion could not be completed in this session. Its contents should be considered old prototype work and not used as the investigation result. Clad and Shine's `Project Recreate` directory was not edited in this investigation.
+
+12. DOM / COMPONENT SHAPE NOTES (OBSERVED + INFERRED)
+These are component-level notes based on the live DOM/accessibility tree and visual layout. The production page is dynamically generated and its exact class/component tree changes between pages, so this is not a full source-code/CSS extraction.
+
+Shared page shell
+- Announcement region: a compact full-width strip at the top with centered text; dark charcoal fill on the home/collection landing state. Product-detail view uses a white header with no visible announcement strip in the inspected viewport.
+- Header/navigation: semantic links/buttons and image-based SVG icons. Home/collection landing header is layered above the hero. Product detail/configurator use a compact utility header. Logo image is an SVG asset in the live page.
+- Main page content is composed of full-width section bands with centered max-width content; background alternates between white and warm off-white. The hero/media sections are edge-to-edge. Card grids/carousels sit inside page gutters.
+- Collection page uses at least: hero container; “main_products” style category carousel; three-column how-it-works content; split promotional/editorial blocks; inspiration carousel; a product-capsule grid; trust/review blocks; editorial cards; long-form copy/accordion; footer.
+- Product listing card is a link wrapping product image, product name, fabric/color/pattern attributes, badges, and price. Listing cards are square-cornered at the observed size. The cards are consistently portrait oriented.
+- Product detail is a two-column product media/info layout. Gallery is the left primary column; breadcrumb and product purchase facts are in the right column. Share/wishlist are icon controls. Product configurator is a full-screen split workspace with a left options/filter pane and right rendered garment preview.
+- Bottom sticky collection CTA is a fixed full-width white component with logo, product/starting price and CTA. Chat is a separate floating circular pink action near the lower-right viewport edge.
+
+More measured layout observations
+- Home screenshot viewport was 1280x720. Announcement measured visually around 50px high; its text is centered. Hero image starts immediately beneath it and fills the viewport remainder. Main nav overlays hero at about y=70.
+- Collection hero source images report 2500x1500 natural dimensions. At viewport 1280x720 they render around x=0,y=50,w=1265,h=759 (device/browser content area). Photo is full bleed, text is left aligned with approx. x=64. Hero headline box x=64,y=235,w=500,h=47; computed 52px Fira Sans regular.
+- Base style cards on desktop show four full cards plus a fifth partially visible in a 1280 screenshot. Each is a tall rectangular photo with text caption directly underneath; a circular next control floats over the rightmost edge.
+- The how-it-works heading sits centered above three evenly distributed centered text columns with generous white space.
+- Editorial “Your Suit, Your Story” uses a large image occupying left half and copy on right. Background is warm neutral. Product grid observed at scroll depth uses five columns, portrait cards, approximately 20–25px gutters. Catalog images had not loaded fully in every screenshot due to lazy loading/network timing; blank light-gray image placeholders were visible during rapid scroll.
+- Product page at viewport 888x560: product media begins x≈48; main image area width≈383px (43%); details begin x≈490 and extend to x≈833. Product title is 20px and wraps two lines. Main price aligned to upper-right. Image arrows are white circles ~44px diameter, centered vertically over the gallery edges.
+- Product designer screenshot at 903x560: left option pane width≈270px (30%); preview area width≈633px (70%). Product mannequin/model is centered in right panel. The lower sticky order summary is about 85px tall. Left options are icon/illustration cards in a vertical scroll region.
+- Corner radii: inspected media containers and collection tiles square (0px); CTA buttons pill-like (40px computed radius); color swatches circular; gallery navigation circular. A full radius inventory for all controls has not been gathered.
+
+Image/media behavior
+- Collection hero renders a crossfading pair of full-bleed lifestyle images. In the captured transition, two models/images briefly overlaid while changing; treat as an image slider/fade rather than static hero.
+- Base style and outfit inspiration groups are horizontal carousels (partially visible next item and a floating arrow affordance). Images are portrait editorial product styling, generally a full-body model, with background set by campaign/look. Caption labels sit below the image, outside the image itself.
+- PDP primary image is a clean, full-body model photo on a light gray/white studio background. There is a sequence of media images including front/back model, garment-only/folded pieces, close detail shots, video poster, and a lifestyle “shop the look” image. Source image dimensions vary by asset: e.g. main image 1500x1875; product gallery/model assets 800x1422; video poster 1080x1920; folded pieces 800x1000. This is for one SKU only.
+- Configurator preview uses multiple transparent PNG layers on the body model: base model, top/shirt, selected fabric/jacket/pants, buttons/details. Observed assets are 1000x1778 each. Layering keeps the body pose stable while design attributes change. This is materially different from tinting a single static photo.
+- Product grid and carousel are lazy-loaded; blank gray placeholders may appear briefly while images load. A captured screenshot showed some placeholders during rapid scrolling.
+
+Exact copy / labels recorded from accessible UI
+Home hero: “Dress the real you” / “Your style, your fit, your way”.
+Collection hero: “Women's Suits” / “from 249€” / “3.495 Reviews” / “Tailored Women's Suits” / “Suits that fit your body, your style, and your story. Each Sumissura suit is cut to your exact measurements, not a standard size, so it fits you perfectly from the first try.” / “Design Your Suit”.
+Collection sequence labels: “Start with a base style”; “Here's how it works”; “SELECT YOUR SUIT FABRIC”; “DESIGN YOUR SUIT”; “MEASURE YOURSELF”; “Design Your Suit Online”; “Inspiration from Real Women”; “Your Suit, Your Story”; “Suits for Women”; “Own the Room, One Stitch at a Time”; “Tailored for the Boss You Are”; “Reviewed by you”; “Learn more in our blog”; “Tailored Suits just for you”.
+Example PDP buttons: “Customize”, “Add to Cart”; detail label “Color”; “Fabric”; “Size Range”; “How it works”; “Free Shipping”.
+Designer bottom stage tabs: “FABRIC”, “STYLE”, “ACCENTS”; order bar: “Tailored Suit”, price, VAT/delivery copy, “Next”.
+
+Interaction state ledger (directly exercised)
+- Home hamburger → opens the drawer and dims the rest of the hero. Clicking Clothing opens product submenu and right image tiles. Clicking Occasion opens occasion submenu. Menu can be closed via X.
+- Collection product “Design Your Suit” CTA → product customizer route.
+- Product “Customize” CTA → opens preselected configuration in full-screen designer; loaded in about ten seconds during observation. This transition preserved selected SKU, price and navy color.
+- Designer “Next” from Style → Accents. “Next” from Accents → My Shopping Bag in observed session (likely prior saved state). No purchase/payment submission.
+- FAQ accordion structure visible with plus icons, but individual FAQs were not expanded and recorded.
+- Hero reviews link, carousel arrows, load-more product control, share, wishlist, gallery arrows, swatches, Add to Cart, measuring help and account/cart actions were not all individually activated. Their current behavior remains unverified.
+
+CSS / token sampling caveat
+- Computed styles were queried from actual DOM nodes for body font, headline, button geometry, colors and product title. No full stylesheet was downloaded or reverse-engineered. A site may use CSS variables and responsive overrides that are not reflected by one node’s computed style. The values in this TXT are the exact sampled browser values where stated; all other dimensions are visual estimates.
+- Captured point samples: body font family `"Fira Sans", Tahoma, sans-serif`; h1 collection 52px, weight 400; product title 20px; body product labels 14px; pink action rgb(232,69,139); dark action rgb(33,39,39); button radius 40px; product images square corners. Spacing, breakpoints, shadows, hover transitions and all colors across the whole site remain to be measured systematically.
+
+Coverage statement
+This document now includes all details actually observed during this investigative session, including CSS samples, page/div structure at component level, text, primary imagery, image dimensions/layering, navigation states, product-detail layout, and the designer flow. It is not an exhaustive audit of every product, every source image, all buttons, all hover states, mobile breakpoints, or the full CSS source. Those items remain explicitly listed as future investigation work above. No new site was built in this pass.

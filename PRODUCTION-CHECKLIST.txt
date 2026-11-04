@@ -1,0 +1,33 @@
+COLNOR — PRODUCTION READINESS CHECKLIST
+Last reviewed: 13 October 2026
+
+CURRENT STATE
+[✓] Standalone Colnor project folder with separate pages for the home page, suit collection, product details, bag, checkout, About, Contact, and order lookup.
+[✓] Sample suit catalog with KSh pricing, product detail views, size selection, and a browser-based shopping bag.
+[✓] Checkout UI includes delivery details and card/M-Pesa choices; current order records are saved in this browser only.
+[✓] Responsive layout and collection/product navigation are in place.
+[ ] Live backend, inventory, order processing, and payment integrations are not connected. Treat the current checkout as a prototype; it does not take payment.
+
+BEFORE A REAL PRODUCT LAUNCH
+[ ] Replace sample products and imagery with approved Colnor inventory and properly licensed product photos.
+[ ] Confirm each product's SKU, variant SKUs, sizes, colors, KSh price, stock quantity, fit notes, care notes, and return eligibility.
+[ ] Choose the production stack and hosting. Decide whether to retain a static front end and add a secure API, or move to a full commerce platform.
+[ ] Create the production database for products, variants, inventory movements, customers, orders, order lines, payments, delivery addresses, and audit history; the current admin data stays in this browser.
+[✓] Local administration UI supports short custom SKUs, opening stock by size, received-stock entries, stock adjustment history, orders, homepage copy/images, contact messages, and JSON backup.
+[ ] Replace browser-local administration with a protected server-backed admin area; add individual accounts, strong authentication, role-based access, audit history, and multi-device persistence.
+[ ] Add server-side cart and checkout validation. Recheck price and stock on the server, prevent overselling, and store order state changes reliably.
+[ ] Connect card payments through the selected Global Payments integration using its approved hosted/tokenized flow; complete sandbox and live-account setup.
+[ ] Connect M-Pesa through the approved Daraja/business account flow. Verify payment callbacks server-side and handle timeouts, retries, duplicate callbacks, and reversals.
+[ ] Never store raw card numbers or security codes. Keep provider secrets on the server, not in HTML or browser JavaScript.
+[ ] Configure order confirmation and operational emails, payment receipts, failed-payment recovery, and an order status/fulfillment workflow.
+[ ] Confirm delivery areas, fees, timelines, returns/refunds, taxes, and customer support contact details; publish clear shipping, returns, privacy, and terms pages.
+
+RELEASE AND OPERATIONS
+[ ] Deploy to a production host with a custom domain, HTTPS, secure environment variables, and separate staging/production settings.
+[ ] Set up database backups and a restore procedure, uptime/error monitoring, and access logging without recording sensitive payment data.
+[ ] Review accessibility, mobile layouts, performance, image licensing, SEO metadata, and browser compatibility.
+[ ] Run end-to-end checks in the payment sandboxes: add/remove items, unavailable sizes, stock changes, successful/failed/cancelled payments, duplicate callbacks, order emails, and refunds.
+[ ] Complete a launch review with the business owner, switch payment credentials from sandbox to live only after approval, and monitor the first orders.
+
+NEXT PRACTICAL STEP
+Choose the backend/hosting approach and payment account setup. Then build the product and inventory API/database before connecting live checkout.
