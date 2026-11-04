@@ -58,3 +58,30 @@
 @media(max-width:650px){.global-header .menu-open{width:28px;flex:0 0 28px;font-size:22px}.global-header .quick-links{display:flex;flex:1 1 auto;gap:0;margin-left:0}.global-header .quick-links a{font-size:11px;white-space:nowrap}.global-header .brand{position:absolute;left:50%;transform:translateX(-50%);font-size:16px}.global-header .header-tools{flex:0 0 auto;margin-left:auto;gap:0}.global-header .header-tools a{font-size:12px}}
 
 .product-grid{align-items:stretch}.product-card{display:flex;flex-direction:column;height:100%}.product-info-text{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;min-height:2.9em;overflow:hidden;line-height:1.45}.product-card .hover-meta{display:block;height:18px;min-height:18px;opacity:0;overflow:hidden;transition:opacity .2s;color:#777}.product-card:hover .hover-meta{height:18px;opacity:1}.product-card .quick-add{margin-top:9px}
+
+/* Homepage hero hierarchy and editorial suit discovery */
+.home-hero .hero-shade{background:linear-gradient(90deg,rgba(15,15,15,.58) 0%,rgba(15,15,15,.34) 38%,transparent 78%),linear-gradient(0deg,rgba(0,0,0,.12),transparent 48%)}
+.home-hero .hero-copy{left:clamp(28px,8vw,132px);top:50%;bottom:auto;width:min(540px,44vw);transform:translateY(-50%);display:flex;flex-direction:column;align-items:flex-start;z-index:2}
+.home-hero .hero-copy h1{font-size:clamp(54px,6.3vw,92px);line-height:.98;letter-spacing:-.045em;margin:0 0 18px;max-width:100%}
+.home-hero .hero-copy h2{font-size:clamp(17px,1.45vw,21px);line-height:1.55;font-weight:400;max-width:460px;margin:0 0 28px;text-wrap:pretty}
+.home-hero .hero-copy .pill{align-self:flex-start;min-height:48px;padding:0 25px}
+.home-categories{padding-top:78px;padding-bottom:84px}
+.home-categories>h2{margin-bottom:28px;letter-spacing:-.025em}
+.category-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.category-card{height:auto;aspect-ratio:.78;background:#e9e7e2}
+.category-card img{object-position:center 34%}
+.category-card span{left:18px;bottom:18px;font-size:16px;font-weight:500;text-shadow:0 1px 12px #0008}
+.suit-edit{padding-top:40px;padding-bottom:96px}
+.suit-edit .section-title{margin-bottom:25px}
+.suit-edit .section-title h2{margin-top:10px}
+.suit-edit-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.suit-edit-card{position:relative;display:block;overflow:hidden;aspect-ratio:.73;background:#dedbd4;color:#fff}
+.suit-edit-card:after{content:"";position:absolute;inset:38% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.66))}
+.suit-edit-card img{width:100%;height:100%;object-fit:cover;object-position:center 35%;transition:transform .55s ease}
+.suit-edit-card:hover img{transform:scale(1.035)}
+.suit-edit-card>span{position:absolute;z-index:1;left:18px;right:18px;bottom:19px;display:flex;flex-direction:column;gap:8px}
+.suit-edit-card small{font-size:9px;letter-spacing:.16em;font-weight:600}
+.suit-edit-card strong{font-size:18px;line-height:1.18;font-weight:500;max-width:230px}
+.suit-edit-card em{font-size:11px;font-style:normal;margin-top:3px}
+@media(max-width:900px){.category-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.suit-edit-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.home-hero .hero-copy{width:min(520px,65vw)}}
+@media(max-width:650px){.home-hero .hero-shade{background:linear-gradient(90deg,rgba(12,12,12,.5),rgba(12,12,12,.18) 78%),linear-gradient(0deg,rgba(0,0,0,.32),transparent 65%)}.home-hero .hero-copy{left:7%;top:52%;bottom:auto;width:86%;transform:translateY(-42%)}.home-hero .hero-copy h1{font-size:clamp(47px,12vw,68px);margin-bottom:14px;max-width:360px}.home-hero .hero-copy h2{font-size:16px;line-height:1.5;max-width:330px;margin-bottom:22px}.home-categories{padding-top:56px;padding-bottom:60px}.home-categories>h2{font-size:25px;margin-bottom:22px}.category-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.category-card{aspect-ratio:.72}.category-card span{left:12px;bottom:13px;font-size:14px}.suit-edit{padding-top:20px;padding-bottom:62px}.suit-edit .section-title{align-items:flex-end;gap:14px}.suit-edit .section-title h2{font-size:25px;line-height:1.12}.suit-edit .section-title>div>p:last-child{font-size:12px;line-height:1.5}.suit-edit .text-cta{font-size:10px;white-space:nowrap}.suit-edit-grid{gap:10px}.suit-edit-card>span{left:12px;right:10px;bottom:13px;gap:6px}.suit-edit-card strong{font-size:15px}.suit-edit-card small{font-size:8px}.suit-edit-card em{font-size:10px}}
